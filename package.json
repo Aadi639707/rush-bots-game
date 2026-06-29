@@ -1,1 +1,16 @@
-
+{
+  "name": "rush-bots",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": { "start": "node src/server.js", "dev": "nodemon src/server.js" },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "mongoose": "^8.5.0",
+    "redis": "^4.6.14",
+    "chess.js": "^1.0.0",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.4.5"
+  }
+}
