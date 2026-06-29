@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Rush Bots</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="lobby">
+    <h2>🎮 ʟᴏʙʙʏ</h2>
+    <ul id="players"></ul>
+    <p id="status">ᴄᴏɴɴᴇᴄᴛɪɴɢ…</p>
+    <button id="startBtn" style="display:none">▶ Start Game</button>
+  </div>
+  <div id="board" style="display:none"></div>
+  <div id="endModal" class="modal" style="display:none">
+    <h2 id="endTitle"></h2>
+    <button id="rematchBtn">🔁 Start New Match</button>
+    <button id="endBtn">❌ End</button>
+  </div>
+  <script type="module" src="js/lobby.js"></script>
+</body>
+</html>
